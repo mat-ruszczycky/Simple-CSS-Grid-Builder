@@ -1,0 +1,110 @@
+/* Common fixes */
+*, *:after, *:before { border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+
+/* Basic Grid */
+.row{
+	width: 100%;
+	text-align: center;
+}
+
+.col{
+	float: none;
+	margin:0 0;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten{
+	width: 100%;
+}
+
+
+nav a{
+	color: #fff;
+	background: #000;
+	padding: 10px;
+	display: inline-block; 
+	text-decoration: none;
+}
+
+.active-link{
+	background: #666;
+}
+
+
+@media (min-width: 600px){
+	.row{
+		width:600px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.row:before, .row:after { content: ''; display: table; }
+
+	.row:after { clear: both; }
+
+	.col{
+		float: left;
+		margin:0 15px;
+	}
+
+	.one{ width: calc(60px * 1 - 30px);}
+
+	.two{ width: calc(60px * 2 - 30px);}
+
+	.three{ width: calc(60px * 3 - 30px);}
+
+	.four{ width: calc(60px * 4 - 30px);}
+
+	.five{ width: calc(60px * 5 - 30px);}
+
+	.six{ width: calc(60px * 6 - 30px);}
+
+	.seven{ width: calc(60px * 7 - 30px);}
+
+	.eight{ width: calc(60px * 8 - 30px);}
+
+	.nine{ width: calc(60px * 9 - 30px);}
+
+	.ten{ width: calc(60px * 10 - 30px);}
+}
+
+
+
+/* Class Changer */
+.hidden{
+	display: none;
+}
+
+
+
+/* Modal Bonus */
+#modal-overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	background-color: rgba(0,0,0, .5);
+	z-index: 100;
+}
+
+#modal{
+	width: 700px;
+	margin: 10% auto;
+	min-height: 300px;
+	border-radius: 10px;
+	box-shadow: 0 0 40px rgba(0,0,0, .75);
+	background: #fff;
+	color: #000;
+	padding: 20px;
+}
+
+
+
+.modal-hide{
+	display: none;
+}
