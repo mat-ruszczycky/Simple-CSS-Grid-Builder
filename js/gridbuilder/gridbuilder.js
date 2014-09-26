@@ -77,7 +77,7 @@ Comments: Building a simple grid system - module pattern.
         }
     };
 
-
+    //Start module
     GridBuilder.init();
     
 })(jQuery);
